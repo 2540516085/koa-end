@@ -6,10 +6,10 @@ module.exports = {
   logAccess: true,
   baseUrl: "/api",
   mysql: {
-    host: "192.168.87.215",
+    host: "",
     port: 3306,
     user: "root",
-    password: "example",
-    database: "desktop",
+    password: "",
+    database: "",
   },
 };
