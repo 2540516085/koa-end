@@ -1,9 +1,9 @@
 {
   "name": "desktop-end",
   "version": "1.0.0",
-  "description": "桌面端后台管理系统",
+  "description": "koa后端框架",
   "main": "app.js",
-  "author": "jichujishuzu",
+  "author": "rsc",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon bin/www",
     "prd": "cross-env NODE_ENV=production pm2 start bin/www"
