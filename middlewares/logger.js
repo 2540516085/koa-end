@@ -57,7 +57,7 @@ const loggerMiddleware = async function (ctx, next) {
   const timer = new Date() - start;
   const logText = `${start} ${method} ${status} ${url} 请求参数: ${JSON.stringify(
     request.body
-  )} 响应参数：${JSON.stringify(body)} 耗时: ${timer}`;
+  )} 响应参数：${JSON.stringify(body)} 耗时: ${timer}ms`;
   process.env.NODE_ENV === "production"
     ? accessLogs.info(logText)
     : logger.info(logText);

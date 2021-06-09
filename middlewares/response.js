@@ -2,7 +2,6 @@ const { errorLogs } = require("./logger");
 
 const responseHandle = async function (ctx, next) {
   await next();
-  console.log(ctx, "responseHandle");
   if (ctx.result !== undefined) {
     ctx.type = "json";
     ctx.body = {

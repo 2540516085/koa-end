@@ -1,15 +1,9 @@
 const { getApplication } = require("../services/application");
 
 const getApplicationList = async function (ctx) {
-  //   console.log(ctx, "afasdfads");
-
   try {
-    const rows = await new Promise((resolve) => {
-      getApplication().then((res) => {
-        resolve(res);
-      });
-    });
-    ctx.result = rows;
+    const rows = await getApplication();
+    ctx.result = Object.assign({ rows: rows });
   } catch (err) {}
 };
 

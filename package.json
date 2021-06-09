@@ -12,6 +12,7 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
     "koa-bodyparser": "^4.3.0",
     "koa-cors": "^0.0.16",
     "koa-helmet": "^6.1.0",

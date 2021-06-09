@@ -1,0 +1,23 @@
+[2021-06-06T13:22:53.170] [ERROR] errorLogs - Error: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/Users/yiche/Desktop/业务项目/desktopEnd/node_modules/mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (events.js:421:28)
+    at Socket.emit (events.js:315:20)
+    at Socket._onTimeout (net.js:483:8)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+    --------------------
+    at Protocol._enqueue (/Users/yiche/Desktop/业务项目/desktopEnd/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/yiche/Desktop/业务项目/desktopEnd/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/yiche/Desktop/业务项目/desktopEnd/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/yiche/Desktop/业务项目/desktopEnd/node_modules/mysql/lib/Pool.js:48:16)
+    at query (/Users/yiche/Desktop/业务项目/desktopEnd/utils/db.js:16:8)
+    at /Users/yiche/Desktop/业务项目/desktopEnd/services/application.js:5:5
+    at new Promise (<anonymous>)
+    at getApplication (/Users/yiche/Desktop/业务项目/desktopEnd/services/application.js:4:10)
+    at getApplicationList (/Users/yiche/Desktop/业务项目/desktopEnd/controllers/application.js:6:24)
+    at dispatch (/Users/yiche/Desktop/业务项目/desktopEnd/node_modules/koa-compose/index.js:42:32) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
